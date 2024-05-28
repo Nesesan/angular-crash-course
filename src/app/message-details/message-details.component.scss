@@ -1,0 +1,46 @@
+/* Styles généraux */
+.message-card {
+  width: 110px;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+}
+
+.message-header {
+  background-color: #4caf50;
+  color: white;
+  padding: 5px;
+  border-radius: 4px 4px 0 0;
+}
+
+.message-content {
+  padding: 5px;
+  border-radius: 0 0 4px 4px;
+}
+
+/* Media Queries pour la réactivité */
+@media (max-width: 768px) {
+  .message-card {
+    width: 90px;
+    margin: 8px;
+    padding: 4px;
+  }
+
+  .message-header, .message-content {
+    padding: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .message-card {
+    width: 100%;
+    margin: 5px 0;
+    padding: 3px;
+  }
+
+  .message-header, .message-content {
+    padding: 3px;
+  }
+}
